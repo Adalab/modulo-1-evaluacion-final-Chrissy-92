@@ -43,6 +43,16 @@
     color: white;
 }
 
+.footer__elements__container {
+    .footer__copy {
+        order: -1;
+    }
+
+    .footer__love__components {
+        order: 0;
+    }
+}
+
 .footer__copy {
     font-size: 18px;
     text-align: center;
@@ -57,49 +67,59 @@
     transform: translateY(-39px);
 }
 
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
+    .footer__container__link {
+        width: 45px;
+        height: 45px;
+        left: 50%;
+        right: 50%;
+        transform: translateY(-159px); 
+         
+    }
+
     .footer__container {
         height: 17em;
         padding-top: 45px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10px 150px;
+        grid-template-rows: 150px;
         gap: 20px;
     }
 
-    .footer__container__link {
-        width: 45px;
-        height: 45px;  
-         
+    .footer__elements__container {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
+
+    .footer__list__container {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        line-height: 30px;
+    }
+
+    .footer__list__socialmedia__container {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        display: flex;
+        align-items: self-start;
+        line-height: 30px;
+    }
+
+    .footer__list, .footer__list__socialmedia, .footer__elements__container  {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__elements__container {
+        padding-top: 20px;
+        gap: 10px;
+    }    
 
     .list__elements, .list__socialmedia--elements {
         font-size: 16px;
-        
     }
-
-    .footer__list {
-        grid-column: 2/3;
-        grid-row: 2/2;
-        display: flex;
-        align-items: self-start;
-        line-height: 30px;
-    }
-
-    .footer__list__socialmedia {
-        grid-column: 3/4;
-        grid-row: 2/2;
-        display: flex;
-        align-items: self-start;
-        line-height: 30px;
-    }
-
-    .footer__copy, .footer__love__components {
-        grid-column: 1/2;
-        grid-row: 2/2;
-        text-align: left;
-    } 
-
-
 }
  
