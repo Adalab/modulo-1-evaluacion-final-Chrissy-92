@@ -1,12 +1,13 @@
 .module2__container {
   width: 100%;
-  height: 35.5em;
+  height: 25em;
   display: flex;
   flex-direction: column;
   justify-content: left;
-  padding-top: 80px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 37px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 45px;
   gap: 20px;
   background-color: #fff;
   border: solid 3px dodgerblue; // ------------------ BORRAR ÉSTA PARTE --------------------------//
@@ -26,16 +27,20 @@
   font-size: 35px;
 }
 
+.module2__paragraph__container {
+  max-width: 690px;
+  text-align: justify;
+}
+
 .module2__paragraph {
-  font-size: 26px;
+  font-size: 20px;
   color: #4a4a4a;
   line-height: 1.6;
 }
 
 .module2__button {
-  width: 95px;
-  height: 60px;
-  margin-top: 15px;
+  width: 76px;
+  height: 45px;
   align-content: center;
   text-align: center;
   border-radius: 28px;
@@ -44,17 +49,18 @@
 
 .module2__link {
   text-decoration: none;
-  font-size: 27px;
+  font-size: 20px;
   font-weight: 600;
   color: #f26002;
 }
 
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
   .module2__container {
+    max-width: 80em;
     height: 21.7em;
-    padding-top: 35px;
     padding-left: 39px;
     padding-right: 39px;
+    padding-bottom: 50px;
   }
 
   .module2__insomnia {
@@ -63,7 +69,11 @@
   }
 
   .module2__h2 {
-    font-size: 28px;
+    font-size: 27px;
+  }
+
+  .module2__paragraph__container {
+    max-width: 745px;
   }
 
   .module2__paragraph {
@@ -75,9 +85,8 @@
     height: 45px;
     border: solid 2px #f26002;
   }
-
-.module2__link {
-    font-size: 20px;
 }
+
+@media screen and (min-width: 1280px) {
 
 }

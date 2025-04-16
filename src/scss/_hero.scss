@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 635px;
+  padding-top: 440px;
   padding-left: 20px;
   padding-right: 20px;
   top: 0;
@@ -13,7 +13,7 @@
   background-image: url(../images/cover.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center;
   border: solid 3px crimson; // ------------------ BORRAR ÉSTA PARTE --------------------------//
 }
 
@@ -59,7 +59,7 @@
 
 @media screen and (min-width: 768px){
   .hero__container {
-    padding-top: 610px;
+    padding-top: 421px;
     gap: 20px;
   }
 
@@ -87,6 +87,7 @@
   
   .hero__container {
     padding-top: 390px;
+    background-position-y: -17px;
   }
 
   .hero__title {
