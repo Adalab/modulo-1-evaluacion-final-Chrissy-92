@@ -74,10 +74,10 @@
         left: 50%;
         right: 50%;
         transform: translateY(-159px); 
-         
     }
 
     .footer__container {
+        max-width: 1279;
         height: 17em;
         padding-top: 45px;
         display: grid;
