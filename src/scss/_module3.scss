@@ -1,5 +1,14 @@
+.module3__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #eff9ff;
+  border: solid 3px yellowgreen; // ------------------ BORRAR ÉSTA PARTE --------------------------//
+}
+
 .module3__container {
   width: 100%;
+  max-width: 100%;
   height: 55em;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -11,8 +20,6 @@
   padding-right: 20px;
   padding-bottom: 85px;
   text-align: center;
-  // gap: 50px;
-  background-color: #eff9ff;
   border: solid 3px orange; // ------------------ BORRAR ÉSTA PARTE --------------------------//
 }
 
@@ -68,18 +75,18 @@
   color: white;
 }
 
-@media screen and (min-width: 736px) {
+@media (min-width: 768px) {
   .module3__container {
+    max-width: 720px;
     height: 24.82em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 4fr 2fr;
     row-gap: 50px;
-    padding-bottom: 65px;
+    padding-bottom: 50px;
   }
 
   .module3__title {
-    grid-column: 1/4;
     font-size: 26px;
   }
 
@@ -117,5 +124,21 @@
 
   .module3__link {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .module3__container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .module3__container {
+    max-width: 1200px;
+    height: 26.7em;
+    padding-top: 45px;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
