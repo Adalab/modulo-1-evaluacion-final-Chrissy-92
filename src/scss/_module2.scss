@@ -47,7 +47,8 @@
   cursor: pointer;
   background-color: var(--brand-white);
   border: solid 3px var(--brand-color-orange);
-  transition: transform 0.3s ease-in, background-color 0.2s ease, border 0.3s ease-in;
+  transition: transform 0.3s ease-in, background-color 0.2s ease,
+    border 0.3s ease-in;
 }
 
 .module2__link {
