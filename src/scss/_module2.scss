@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--brand-color-fff);
 }
 
 .module2__container {
@@ -22,7 +22,7 @@
 .module2__insomnia {
   display: inline-block;
   height: 30px;
-  color: #8ccbea;
+  color: var(--brand-color-babyblue);
   font-size: 20px;
   text-align: left;
 }
@@ -34,7 +34,7 @@
 
 .module2__paragraph {
   font-size: 20px;
-  color: #4a4a4a;
+  color: var(--brand-color-gray);
   line-height: 1.6;
   text-align: justify;
 }
@@ -45,8 +45,8 @@
   text-align: center;
   border-radius: 28px;
   cursor: pointer;
-  background-color: white;
-  border: solid 3px #f26002;
+  background-color: var(--brand-white);
+  border: solid 3px var(--brand-color-orange);
   transition: transform 0.3s ease-in, background-color 0.2s ease, border 0.3s ease-in;
 }
 
@@ -59,16 +59,16 @@
   font-size: 20px;
   font-weight: 600;
   border-radius: 15px;
-  color: #f26002;
+  color: var(--brand-color-orange);
 }
 
 .module2__button:hover {
   transform: scale(1.3);
-  background-color: #f26002;
+  background-color: var(--brand-color-orange);
 }
 
 .module2__link:hover {
-  color: white;
+  color: var(--brand-white);
 }
 
 @media (min-width: 768px) {
@@ -96,7 +96,7 @@
   .module2__button {
     width: 91px;
     height: 45px;
-    border: solid 2px #f26002;
+    border: solid 2px var(--brand-color-orange);
   }
 }
 

@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  color: white;
+  color: var(--brand-white);
   margin-bottom: 20px;
 }
 
@@ -44,7 +44,7 @@
     display: flex;
     justify-content: center;
     flex-grow: 0;
-    background-color: white;
+    background-color: var(--brand-white);
     border-radius: 50%;
     align-items: center;
 }
@@ -52,7 +52,7 @@
 .hero__link {
     width: 22px;
     height: 15px;
-    background-color: white;
+    background-color: var(--brand-white);
     transform: translateY(3.5px);
 }
 
